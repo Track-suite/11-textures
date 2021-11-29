@@ -9,29 +9,29 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
  */
 const loadingManager = new THREE.LoadingManager()
 
-// loadingManager.onStart = () =>
-// {
-//     console.log('loading statrted')
-// }
-// loadingManager.onLoad = () =>
-// {
-//     console.log('loading finished')
-// }
-// loadingManager.onProgress = () =>
-// {
-//     console.log('loading progressing')
-// }
-// loadingManager.onError = () =>
-// {
-//     console.log('loading error')
-// }
+loadingManager.onStart = () =>
+{
+    console.log('loading statrted')
+}
+loadingManager.onLoad = () =>
+{
+    console.log('loading finished')
+}
+loadingManager.onProgress = () =>
+{
+    console.log('loading progressing')
+}
+loadingManager.onError = () =>
+{
+    console.log('loading error')
+}
 
 const textureLoader = new THREE.TextureLoader(loadingManager)
 const colorTexture = textureLoader.load('/textures/door/color.jpg')
 const alphaTexture = textureLoader.load('/textures/door/alpha.jpg')
 const heightTexture = textureLoader.load('/textures/door/alpha.jpg')
 //const textureLoader = new THREE.TextureLoader(loadingManager)
-const texture = textureLoader.load('/textures/minecraft.png')
+const texture = textureLoader.load('/textures/wave.png')
 // texture.repeat.x = 3
 // texture.repeat.y = 3
 // texture.wrapS = THREE.RepeatWrapping
